@@ -3,6 +3,8 @@ from pyrogram import Client, filters
 
 app = Client("my_bot", api_id=11965840, api_hash="716c845bdc09adf2b6d36b0b63e4a455", bot_token="6652137531:AAGiK3rAZVBSKOh_aPYzYdIFL-lAnKNhEe4")
 
+print("DONE!")
+
 @app.on_message(filters.command("start"))
 def start(client, message):
     user_id = message.from_user.id
